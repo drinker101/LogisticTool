@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tool.view.LocationOverviewController">
+   <children>
+      <ScrollPane fx:id="locationScrollPane" layoutX="22.0" layoutY="20.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane fx:id="locationPane" minHeight="0.0" minWidth="0.0" prefHeight="395.0" prefWidth="595.0">
+               <children>
+                  <Button fx:id="editButton" layoutX="522.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleLocationEdit" text="calculation" AnchorPane.rightAnchor="0.0" />
+                  <Button layoutX="5.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleNewLocation" text="new location" />
+                  <Accordion fx:id="locationAccordion" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
